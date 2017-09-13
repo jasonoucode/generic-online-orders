@@ -1,0 +1,77 @@
+Notes:
+
+when a company is made:
+
+== for example if we want to insert company 3 ==
+
+TABLES:
+
+- companies
+	- company1
+	- company2
+	- company3
+
+- company3
+	- company3menu
+	- company3orders
+
+- company3menu
+
+- company3orders
+
+
+
+
+to delete company3:
+
+drop table: company3menu, company3orders
+drop table: company3
+delete: company3 from companies
+
+
+company:
+
+get:
+	- gets a list of all the databasese under that company
+
+post:
+	- creates a new company and two new dbs under it: menu and orders
+
+put? (might not be needed):
+	- either creates a new company or renames a company
+
+delete:
+	- deletes the company
+
+
+menu:
+
+get:
+	- gets the entire menu list
+
+post:
+	- creates a new menu item
+
+put:
+	- renames menu item
+
+delete:
+	- deletes menu item
+
+
+
+
+menuitem:
+
+get:
+	- gets the options for that menu item
+
+post:
+	- creates a new option for that menu item
+
+put:
+	- renames an option for that menu item
+
+delete:
+	- deletes the menu item
+
